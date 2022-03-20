@@ -10,13 +10,17 @@
     "test": "npx vitest",
     "test:run": "npx vitest run",
     "test:coverrage": "npx vitest --coverage",
-    "publish": "npm publish"
+    "publish": "npm run build && npm publish"
   },
   "keywords": [
     "vite",
     "vitest",
     "docusaurus",
     "template"
+  ],
+  "files": [
+    "dist",
+    "src"
   ],
   "author": "Yukiniro",
   "license": "MIT",
