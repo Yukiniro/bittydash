@@ -1,3 +1,4 @@
-export const sayHello = function () {
-  return "Hello World";
-}
+import isNumber from "./isNumber";
+import sleep from "./sleep";
+
+export { isNumber, sleep };
