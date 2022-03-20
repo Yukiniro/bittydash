@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "@yukiniro/eslint-config"
+  ]
+}
