@@ -1,32 +1,32 @@
 {
-  "name": "tinydash",
-  "version": "0.0.1",
+  "name": "bittydash",
+  "version": "0.0.3",
   "description": "A small JavaScript utility library",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "lint": "npx eslint src/**/*.{js,ts} --fix",
     "prettier": "npx prettier src/**/*.{js,ts} --write",
-    "build": "npx rollup -c rollup.config.js",
+    "build:dev": "npx rollup -c rollup.config.dev.js",
+    "build:prod": "npx rollup -c rollup.config.prod.js",
     "test": "npx vitest",
     "test:run": "npx vitest run",
     "test:coverrage": "npx vitest --coverage",
-    "publish": "npm run build && npm publish"
+    "publish": "npm run build:dev && npm run build:prod && npm publish"
   },
   "keywords": [
-    "vite",
-    "vitest",
-    "docusaurus",
-    "template"
+    "utility",
+    "util",
+    "modules",
+    "lodash"
   ],
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "author": "Yukiniro",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yukiniro/tinydash"
+    "url": "https://github.com/Yukiniro/bittydash"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",

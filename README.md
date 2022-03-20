@@ -1,25 +1,25 @@
-# tinydash
+# bittydash
 
-The `tinydash` A small JavaScript utility library.
+The `bittydash` A small JavaScript utility library.
 
 ## Basic Use
 
 npm
 
 ```shell
-npm i tinydash
+npm i bittydash
 ```
 
 pnpm
 
 ```shell
-pnpm add tinydash
+pnpm add bittydash
 ```
 
 ## Example
 
 ```javascript
-import { isNaN } from 'tinydash'
+import { isNaN } from 'bittydash'
 
 console.log(isNaN(1)); // false
 console.log(isNaN(NaN)); // true

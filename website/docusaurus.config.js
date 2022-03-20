@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Tinydash',
+  title: 'bittydash',
   tagline: 'A small JavaScript utility library.',
-  url: 'https://github.com/Yukiniro/tinydash',
+  url: 'https://github.com/Yukiniro/bittydash',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Yukiniro', // Usually your GitHub org/user name.
-  projectName: 'tinydash', // Usually your repo name.
+  projectName: 'bittydash', // Usually your repo name.
 
   presets: [
     [
@@ -35,7 +35,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Tinydash',
+        title: 'bittydash',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -48,7 +48,7 @@ const config = {
             label: 'Tutorial',
           },
           {
-            href: 'https://github.com/Yukiniro/tinydash',
+            href: 'https://github.com/Yukiniro/bittydash',
             label: 'GitHub',
             position: 'right',
           },
