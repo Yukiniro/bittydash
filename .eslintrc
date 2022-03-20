@@ -1,5 +1,9 @@
 {
   "extends": [
     "@yukiniro/eslint-config"
-  ]
+  ],
+  "rules": {
+    "no-self-compare": "off",
+    "@typescript-eslint/no-explicit-any": 0
+  }
 }

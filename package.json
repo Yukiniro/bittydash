@@ -4,8 +4,8 @@
   "description": "A small JavaScript utility library",
   "main": "index.ts",
   "scripts": {
-    "lint": "npx eslint src/**",
-    "prettier": "npx prettier src/** --write",
+    "lint": "npx eslint src/**/*.{js,ts} --fix",
+    "prettier": "npx prettier src/**/*.{js,ts} --write",
     "build": "npx rollup -c rollup.config.js",
     "test": "npx vitest",
     "test:run": "npx vitest run",
@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-		"url": "https://github.com/Yukiniro/tinydash"
+    "url": "https://github.com/Yukiniro/tinydash"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
@@ -31,7 +31,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-typescript": "^8.3.1",
-    "@yukiniro/eslint-config": "^0.0.3",
+    "@yukiniro/eslint-config": "^0.0.6",
     "eslint": "^8.11.0",
     "prettier": "^2.6.0",
     "prettier-eslint": "^13.0.0",
