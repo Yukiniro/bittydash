@@ -15,4 +15,6 @@ test("isString", () => {
   expect(isString(null)).toBe(false);
   expect(isString([])).toBe(false);
   expect(isString({})).toBe(false);
+  expect(isString(true)).toBe(false);
+  expect(isString(false)).toBe(false);
 });

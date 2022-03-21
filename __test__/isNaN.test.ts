@@ -13,4 +13,6 @@ test("isNaN", () => {
   expect(isNaN(null)).toBe(false);
   expect(isNaN([])).toBe(false);
   expect(isNaN({})).toBe(false);
+  expect(isNaN(true)).toBe(false);
+  expect(isNaN(false)).toBe(false);
 });

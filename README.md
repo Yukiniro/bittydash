@@ -30,14 +30,14 @@ console.log(isNaN(NaN)); // true
 - [x] `isNumber`
 - [x] `isUndefined`
 - [x] `isString`
-- [ ] `isObject`
-- [ ] `isArray`
-- [ ] `isNull`
+- [x] `isObject`
+- [x] `isArray`
+- [x] `isNull`
 - [x] `isNaN`
-- [ ] `isBoolean`
-- [ ] `isFalsy`
-- [ ] `isTruthy`
+- [x] `isBoolean`
+- [x] `isFalsy`
+- [x] `isTruthy`
 - [x] `sleep`
-- [ ] `polling`
-- [ ] `chunk`
+- [x] `polling`
+- [x] `chunk`
 - [ ] `clone`
