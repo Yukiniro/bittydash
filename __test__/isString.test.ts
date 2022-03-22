@@ -18,4 +18,6 @@ test("isString", () => {
   expect(isString(true)).toBe(false);
   expect(isString(false)).toBe(false);
   expect(isString(() => {})).toBe(false);
+  expect(isString(new Set())).toBe(false);
+  expect(isString(new Map())).toBe(false);
 });

@@ -16,4 +16,6 @@ test("isTruthy", () => {
   expect(isTruthy(true)).toBe(true);
   expect(isTruthy(false)).toBe(false);
   expect(isTruthy(() => {})).toBe(true);
+  expect(isTruthy(new Set())).toBe(true);
+  expect(isTruthy(new Map())).toBe(true);
 });

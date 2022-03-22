@@ -35,7 +35,9 @@ console.log(isNaN(NaN)); // true
 - [x] `isNull`
 - [x] `isNaN`
 - [x] `isBoolean`
-- [ ] `isFunction`
+- [x] `isFunction`
+- [x] `isSet`
+- [x] `isMap`
 - [x] `isFalsy`
 - [x] `isTruthy`
 - [x] `sleep`

@@ -6,6 +6,8 @@ import isObject from "./isObject";
 import isArray from "./isArray";
 import isBoolean from "./isBoolean";
 import isFunction from "./isFunction";
+import isSet from "./isSet";
+import isMap from "./isMap";
 import isFalsy from "./isFalsy";
 import isTruthy from "./isTruthy";
 import sleep from "./sleep";
@@ -22,6 +24,8 @@ export {
   isArray,
   isBoolean,
   isFunction,
+  isSet,
+  isMap,
   isFalsy,
   isTruthy,
   sleep,

@@ -16,4 +16,6 @@ test("isUndefined", () => {
   expect(isUndefined(true)).toBe(false);
   expect(isUndefined(false)).toBe(false);
   expect(isUndefined(() => {})).toBe(false);
+  expect(isUndefined(new Set())).toBe(false);
+  expect(isUndefined(new Map())).toBe(false);
 });

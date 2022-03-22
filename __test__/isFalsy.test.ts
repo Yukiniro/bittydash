@@ -16,4 +16,6 @@ test("isFalsy", () => {
   expect(isFalsy(true)).toBe(false);
   expect(isFalsy(false)).toBe(true);
   expect(isFalsy(() => {})).toBe(false);
+  expect(isFalsy(new Set())).toBe(false);
+  expect(isFalsy(new Map())).toBe(false);
 });
