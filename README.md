@@ -45,6 +45,6 @@ console.log(isNaN(NaN)); // true
 - [x] `chunk`
 - [ ] `clone`
 - [x] `remove`
-- [ ] `isEqual`
+- [x] `isEqual`
 - [ ] `memo`
 - [ ] `random`

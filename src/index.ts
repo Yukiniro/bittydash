@@ -14,6 +14,7 @@ import sleep from "./sleep";
 import polling from "./polling";
 import chunk from "./chunk";
 import remove from "./remove";
+import isEqual from "./isEqual";
 
 export {
   isNumber,
@@ -32,4 +33,5 @@ export {
   polling,
   chunk,
   remove,
+  isEqual,
 };
