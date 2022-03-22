@@ -15,4 +15,5 @@ test("isNaN", () => {
   expect(isNaN({})).toBe(false);
   expect(isNaN(true)).toBe(false);
   expect(isNaN(false)).toBe(false);
+  expect(isNaN(() => {})).toBe(false);
 });

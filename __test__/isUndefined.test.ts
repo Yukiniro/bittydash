@@ -15,4 +15,5 @@ test("isUndefined", () => {
   expect(isUndefined({})).toBe(false);
   expect(isUndefined(true)).toBe(false);
   expect(isUndefined(false)).toBe(false);
+  expect(isUndefined(() => {})).toBe(false);
 });

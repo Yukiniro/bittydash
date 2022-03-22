@@ -15,4 +15,5 @@ test("isBoolean", () => {
   expect(isBoolean({})).toBe(false);
   expect(isBoolean(true)).toBe(true);
   expect(isBoolean(false)).toBe(true);
+  expect(isBoolean(() => {})).toBe(false);
 });

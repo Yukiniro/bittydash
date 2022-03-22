@@ -15,4 +15,5 @@ test("isFalsy", () => {
   expect(isFalsy({})).toBe(false);
   expect(isFalsy(true)).toBe(false);
   expect(isFalsy(false)).toBe(true);
+  expect(isFalsy(() => {})).toBe(false);
 });

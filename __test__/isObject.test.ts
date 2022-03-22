@@ -15,4 +15,5 @@ test("isObject", () => {
   expect(isObject({})).toBe(true);
   expect(isObject(true)).toBe(false);
   expect(isObject(false)).toBe(false);
+  expect(isObject(() => {})).toBe(false);
 });

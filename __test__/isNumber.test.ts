@@ -15,4 +15,5 @@ test("isNumber", () => {
   expect(isNumber({})).toBe(false);
   expect(isNumber(true)).toBe(false);
   expect(isNumber(false)).toBe(false);
+  expect(isNumber(() => {})).toBe(false);
 });

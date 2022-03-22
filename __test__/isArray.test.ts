@@ -15,4 +15,5 @@ test("isArray", () => {
   expect(isArray({})).toBe(false);
   expect(isArray(true)).toBe(false);
   expect(isArray(false)).toBe(false);
+  expect(isArray(() => {})).toBe(false);
 });
