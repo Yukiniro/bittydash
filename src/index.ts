@@ -15,6 +15,8 @@ import polling from "./polling";
 import chunk from "./chunk";
 import remove from "./remove";
 import isEqual from "./isEqual";
+import fixed from "./fixed";
+import random from "./random";
 
 export {
   isNumber,
@@ -34,4 +36,6 @@ export {
   chunk,
   remove,
   isEqual,
+  fixed,
+  random,
 };
