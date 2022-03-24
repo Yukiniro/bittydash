@@ -17,6 +17,7 @@ import remove from "./remove";
 import isEqual from "./isEqual";
 import fixed from "./fixed";
 import random from "./random";
+import clone from "./clone";
 
 export {
   isNumber,
@@ -38,4 +39,5 @@ export {
   isEqual,
   fixed,
   random,
+  clone,
 };
