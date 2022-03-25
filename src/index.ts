@@ -18,6 +18,7 @@ import isEqual from "./isEqual";
 import fixed from "./fixed";
 import random from "./random";
 import clone from "./clone";
+import memo from "./memo";
 
 export {
   isNumber,
@@ -40,4 +41,5 @@ export {
   fixed,
   random,
   clone,
+  memo,
 };
