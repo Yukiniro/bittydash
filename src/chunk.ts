@@ -1,6 +1,12 @@
 import isArray from "./isArray";
 import isString from "./isString";
 
+/**
+ * @desc Split elements in the array into groups the length of size.
+ * @param value
+ * @param size
+ * @returns
+ */
 function chunk(value: any, size = 1): Array<any> {
   if (!isString(value) && !isArray(value)) {
     throw new Error("value must be string or array");
