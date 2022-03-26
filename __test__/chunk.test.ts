@@ -3,7 +3,7 @@ import { chunk } from "../src";
 
 test("chunk error", () => {
   expect(() => {
-    chunk(111);
+    chunk(111 as unknown as string);
   }).toThrow("value must be string or array");
 });
 

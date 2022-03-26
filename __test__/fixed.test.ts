@@ -2,7 +2,7 @@ import { expect, test } from "vitest";
 import { fixed } from "../src";
 
 test("fixed wrong", () => {
-  expect(() => fixed("123")).toThrowError("Value must be number");
+  expect(() => fixed("123" as unknown as number)).toThrowError("Value must be number");
 });
 
 test("fixed", () => {
