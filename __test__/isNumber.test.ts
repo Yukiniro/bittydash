@@ -8,7 +8,7 @@ test("isNumber", () => {
   expect(isNumber(Infinity)).toBe(true);
   expect(isNumber(-Infinity)).toBe(true);
   expect(isNumber(NaN)).toBe(false);
-  expect(isNumber('1')).toBe(false);
+  expect(isNumber("1")).toBe(false);
   expect(isNumber(undefined)).toBe(false);
   expect(isNumber(null)).toBe(false);
   expect(isNumber([])).toBe(false);

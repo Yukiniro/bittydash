@@ -3,7 +3,7 @@ import { memo } from "../src";
 
 test("memo wrong", () => {
   expect(() => {
-    memo("111");
+    memo("111" as unknown as () => any);
   }).toThrowError("Handler must be function");
 });
 

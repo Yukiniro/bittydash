@@ -1,5 +1,4 @@
-import { expect } from "vitest";
-import { test } from "vitest";
+import { expect, test } from "vitest";
 import { isString } from "../src";
 
 test("isString", () => {

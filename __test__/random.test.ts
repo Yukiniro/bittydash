@@ -14,5 +14,10 @@ test("random", () => {
 });
 
 test("random wrong", () => {
-  expect(() => random(1, "2")).toThrowError("Min or max must be number");
+  expect(() => random(1, "2" as unknown as number)).toThrowError(
+    "Min or max must be number"
+  );
+  expect(() => random(2, 1)).toThrowError(
+    "The min value must less than the max value"
+  );
 });

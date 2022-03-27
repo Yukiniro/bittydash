@@ -3,7 +3,7 @@ import { remove } from "../src";
 
 test("remove error", () => {
   expect(() => {
-    remove(111, "");
+    remove(111 as unknown as any[], "");
   }).toThrow("value must be array");
 });
 
