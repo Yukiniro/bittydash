@@ -6,9 +6,12 @@ import isNumber from "./isNumber";
  * @param max The max value.
  * @returns The random value.
  */
-function random(min: any, max: any): number {
+function random(min: number, max: number): number {
   if (!isNumber(min) || !isNumber(max)) {
     throw new Error("Min or max must be number");
+  }
+  if (min >= max) {
+    throw new Error("The min value must less than the max value");
   }
   const intMin = Math.ceil(min);
   const intMax = Math.floor(max);
