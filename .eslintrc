@@ -3,6 +3,8 @@
   "rules": {
     "no-self-compare": "off",
     "@typescript-eslint/no-explicit-any": 0,
-    "no-void": "off"
+    "no-void": "off",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": ["off"]
   }
 }
