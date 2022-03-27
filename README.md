@@ -1,5 +1,8 @@
 # bittydash
 
+![npm](https://img.shields.io/npm/v/bittydash)
+![GitHub](https://img.shields.io/github/license/yukiniro/bittydash)
+
 The `bittydash` A small JavaScript utility library.
 
 ## Basic Use
