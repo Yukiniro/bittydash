@@ -1,9 +1,9 @@
-# bittydash
+# [bittydash](https://github.com/Yukiniro/bittydash)
 
 ![npm](https://img.shields.io/npm/v/bittydash)
 ![GitHub](https://img.shields.io/github/license/yukiniro/bittydash)
 
-The `bittydash` A small JavaScript utility library.
+The `bittydash` A small JavaScript utility library. And there is the [document website](https://bittydash.vercel.app/).
 
 ## Basic Use
 
@@ -27,28 +27,3 @@ import { isNaN } from 'bittydash'
 console.log(isNaN(1)); // false
 console.log(isNaN(NaN)); // true
 ```
-
-## TODO
-
-- [x] `isNumber`
-- [x] `isUndefined`
-- [x] `isString`
-- [x] `isObject`
-- [x] `isArray`
-- [x] `isNull`
-- [x] `isNaN`
-- [x] `isBoolean`
-- [x] `isFunction`
-- [x] `isSet`
-- [x] `isMap`
-- [x] `isFalsy`
-- [x] `isTruthy`
-- [x] `sleep`
-- [x] `polling`
-- [x] `chunk`
-- [x] `clone`
-- [x] `remove`
-- [x] `isEqual`
-- [x] `memo`
-- [x] `random`
-- [x] `fixed`
