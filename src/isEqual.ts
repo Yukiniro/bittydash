@@ -4,6 +4,12 @@ import isNaN from "./isNaN";
 import isObject from "./isObject";
 import isSet from "./isSet";
 
+/**
+ * @description Determine if two values are equal by deep comparison.
+ * @param value The value to compare.
+ * @param other The other value to compare.
+ * @returns Return true if equal, else false.
+ */
 function isEqual(value: any, other: any): boolean {
   const cache = [];
   const hasCache = (value: any, other: any) => {
