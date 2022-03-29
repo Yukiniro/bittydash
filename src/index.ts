@@ -19,6 +19,8 @@ import fixed from "./fixed";
 import random from "./random";
 import clone from "./clone";
 import memo from "./memo";
+import throttle from "./throttle";
+import debounce from "./debounce";
 
 export {
   isNumber,
@@ -42,4 +44,6 @@ export {
   random,
   clone,
   memo,
+  throttle,
+  debounce,
 };
