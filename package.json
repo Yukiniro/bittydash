@@ -2,19 +2,19 @@
   "name": "bittydash",
   "version": "0.0.8",
   "description": "A small JavaScript utility library",
-  "main": "index.js",
+  "main": "dist/bittydash.cjs.js",
+  "module": "dist/bittydash.esm.js",
   "scripts": {
     "lint": "npx eslint src/**/*.{js,ts} --fix",
     "lint:test": "npx eslint __test__/**/*.{js,ts} --fix",
     "prettier": "npx prettier src/**/*.{js,ts} --write",
     "prettier:test": "npx prettier __test__/**/*.{js,ts} --write",
     "doc": "npx typedoc",
-    "build:dev": "npx rollup -c rollup.config.dev.js",
-    "build:prod": "npx rollup -c rollup.config.prod.js",
+    "build": "npx rollup -c rollup.config.js",
     "test": "npx vitest",
     "test:run": "npx vitest run",
     "test:coverrage": "npx vitest --coverage",
-    "publish": "npm run build:dev && npm run build:prod && npm publish"
+    "publish": "pnpm run build && pnpm publish"
   },
   "keywords": [
     "utility",
