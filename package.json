@@ -1,6 +1,6 @@
 {
   "name": "bittydash",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A small JavaScript utility library",
   "main": "dist/bittydash.cjs.js",
   "module": "dist/bittydash.esm.js",
@@ -25,7 +25,8 @@
     "lodash"
   ],
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "author": "Yukiniro",
   "license": "MIT",
