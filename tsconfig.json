@@ -1,4 +1,8 @@
 {
-  "compilerOptions": {},
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./types",
+    "newLine": "lf"
+  },
   "include": ["./src/**/*"]
 }

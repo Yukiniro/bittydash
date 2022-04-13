@@ -16,7 +16,7 @@ function getConfig(libraryName) {
       },
     ],
     plugins: [
-      typescript(),
+      typescript({ useTsconfigDeclarationDir: true, clean: true }),
       babel({
         babelHelpers: "bundled",
         presets: ["@babel/preset-env"],
