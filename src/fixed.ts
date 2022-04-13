@@ -1,4 +1,4 @@
-import { isNumber } from "./index";
+import isNumber from "./isNumber";
 
 /**
  * @description Formats a number using fixed-point notation.
