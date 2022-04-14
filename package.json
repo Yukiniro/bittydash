@@ -11,7 +11,7 @@
     "prettier": "npx prettier src/**/*.{js,ts} --write",
     "prettier:test": "npx prettier __test__/**/*.{js,ts} --write",
     "doc": "npx typedoc",
-    "build": "node scripts/remove.js && rollup -c rollup.config.js",
+    "build": "node scripts/remove.mjs && rollup -c rollup.config.js",
     "test": "npx vitest",
     "test:run": "npx vitest run",
     "test:coverrage": "npx vitest --coverage",
