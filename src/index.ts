@@ -22,6 +22,7 @@ import memo from "./memo";
 import throttle from "./throttle";
 import debounce from "./debounce";
 import valueInRange from "./valueInRange";
+import randomColor from "./randomColor";
 
 export {
   isNumber,
@@ -48,4 +49,5 @@ export {
   throttle,
   debounce,
   valueInRange,
+  randomColor,
 };

@@ -39,10 +39,10 @@ function randomColor(type = "hex", opacity?: number) {
       const hueValue = random(0, 359);
       const saturationValue = random(0, 100);
       const lightnessValue = random(0, 100);
-      const opacityValue = valueInRange(opacity, 0, 1);
       if (isUndefined(opacity)) {
         return `hsl(${hueValue}, ${saturationValue}%, ${lightnessValue}%)`;
       } else {
+        const opacityValue = valueInRange(opacity, 0, 1);
         return `hsla(${hueValue}, ${saturationValue}%, ${lightnessValue}%, ${opacityValue})`;
       }
     }
