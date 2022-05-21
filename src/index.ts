@@ -21,6 +21,7 @@ import clone from "./clone";
 import memo from "./memo";
 import throttle from "./throttle";
 import debounce from "./debounce";
+import valueInRange from "./valueInRange";
 
 export {
   isNumber,
@@ -46,4 +47,5 @@ export {
   memo,
   throttle,
   debounce,
+  valueInRange,
 };
