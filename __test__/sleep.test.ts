@@ -2,7 +2,9 @@ import { expect, test } from "vitest";
 import { sleep } from "../src";
 
 test("sleep error", async () => {
-  await expect(sleep(null)).rejects.toThrow("Time must be a number");
+  await expect(sleep(null as unknown as number)).rejects.toThrow(
+    "Time must be a number"
+  );
 });
 
 test("sleep", async () => {
