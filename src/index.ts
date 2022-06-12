@@ -23,6 +23,8 @@ import throttle from "./throttle";
 import debounce from "./debounce";
 import valueInRange from "./valueInRange";
 import randomColor from "./randomColor";
+import isEven from "./isEven";
+import isOdd from "./isOdd";
 
 export {
   isNumber,
@@ -50,4 +52,6 @@ export {
   debounce,
   valueInRange,
   randomColor,
+  isEven,
+  isOdd,
 };
