@@ -6,5 +6,9 @@
     "no-void": "off",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": ["off"]
+  },
+  "env": {
+    "browser": true,
+    "node": true
   }
 }
