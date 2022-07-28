@@ -3,7 +3,7 @@ import { fixed } from "../src";
 
 test("fixed wrong", () => {
   expect(() => fixed("123" as unknown as number)).toThrowError(
-    "Value must be number"
+    "The value must be number"
   );
 });
 

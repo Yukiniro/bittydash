@@ -9,7 +9,7 @@ import isString from "./isString";
  */
 function chunk(value: any[] | string, size = 1): any[] {
   if (!isString(value) && !isArray(value)) {
-    throw new Error("value must be string or array");
+    throw new Error("The value must be string or array");
   }
   const count = Math.ceil(value.length / size);
   const chunks = [];

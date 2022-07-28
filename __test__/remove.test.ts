@@ -2,9 +2,9 @@ import { expect, test } from "vitest";
 import { remove } from "../src";
 
 test("remove error", () => {
-  expect(() => {
-    remove(111 as unknown as any[], "");
-  }).toThrow("value must be array");
+  expect(() => remove(111 as unknown as any[], "")).toThrow(
+    "value must be array"
+  );
 });
 
 test("remove", () => {

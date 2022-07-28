@@ -2,9 +2,9 @@ import { expect, test } from "vitest";
 import { chunk } from "../src";
 
 test("chunk error", () => {
-  expect(() => {
-    chunk(111 as unknown as string);
-  }).toThrow("value must be string or array");
+  expect(() => chunk(111 as unknown as string)).toThrowError(
+    "The value must be string or array"
+  );
 });
 
 test("chunk", () => {

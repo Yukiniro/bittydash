@@ -8,7 +8,7 @@ import isNumber from "./isNumber";
  */
 function fixed(value: number, digits = 0): number {
   if (!isNumber(value)) {
-    throw new Error("Value must be number");
+    throw new Error("The value must be number");
   }
   return Number(value.toFixed(digits));
 }

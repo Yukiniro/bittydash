@@ -8,7 +8,7 @@ import isFunction from "./isFunction";
  */
 function remove(array: any[], checker: any) {
   if (!isArray(array)) {
-    throw new Error("value must be array");
+    throw new Error("The value must be array");
   }
   const newArray = array.filter((item: any) => {
     return isFunction(checker) ? !checker(item) : checker !== item;
