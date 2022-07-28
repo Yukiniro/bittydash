@@ -25,6 +25,7 @@ import valueInRange from "./valueInRange";
 import randomColor from "./randomColor";
 import isEven from "./isEven";
 import isOdd from "./isOdd";
+import uniq from "./uniq";
 
 export {
   isNumber,
@@ -54,4 +55,5 @@ export {
   randomColor,
   isEven,
   isOdd,
+  uniq,
 };
