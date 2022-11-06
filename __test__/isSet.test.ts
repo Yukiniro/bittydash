@@ -18,4 +18,5 @@ test("isSet", () => {
   expect(isSet(() => {})).toBe(false);
   expect(isSet(new Set())).toBe(true);
   expect(isSet(new Map())).toBe(false);
+  expect(isSet(new ArrayBuffer(1))).toBe(false);
 });

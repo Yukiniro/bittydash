@@ -19,4 +19,5 @@ test("isString", () => {
   expect(isString(() => {})).toBe(false);
   expect(isString(new Set())).toBe(false);
   expect(isString(new Map())).toBe(false);
+  expect(isString(new ArrayBuffer(1))).toBe(false);
 });

@@ -18,4 +18,5 @@ test("isBoolean", () => {
   expect(isBoolean(() => {})).toBe(false);
   expect(isBoolean(new Set())).toBe(false);
   expect(isBoolean(new Map())).toBe(false);
+  expect(isBoolean(new ArrayBuffer(1))).toBe(false);
 });

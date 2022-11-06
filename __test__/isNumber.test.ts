@@ -18,4 +18,5 @@ test("isNumber", () => {
   expect(isNumber(() => {})).toBe(false);
   expect(isNumber(new Set())).toBe(false);
   expect(isNumber(new Map())).toBe(false);
+  expect(isNumber(new ArrayBuffer(1))).toBe(false);
 });

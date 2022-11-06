@@ -18,4 +18,5 @@ test("isFalsy", () => {
   expect(isFalsy(() => {})).toBe(false);
   expect(isFalsy(new Set())).toBe(false);
   expect(isFalsy(new Map())).toBe(false);
+  expect(isFalsy(new ArrayBuffer(1))).toBe(false);
 });

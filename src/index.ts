@@ -4,6 +4,7 @@ import isNaN from "./isNaN";
 import isUndefined from "./isUndefined";
 import isObject from "./isObject";
 import isArray from "./isArray";
+import isArrayBuffer from "./isArrayBuffer";
 import isBoolean from "./isBoolean";
 import isFunction from "./isFunction";
 import isSet from "./isSet";
@@ -34,6 +35,7 @@ export {
   isUndefined,
   isObject,
   isArray,
+  isArrayBuffer,
   isBoolean,
   isFunction,
   isSet,

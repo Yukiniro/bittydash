@@ -18,4 +18,5 @@ test("isArray", () => {
   expect(isArray(() => {})).toBe(false);
   expect(isArray(new Set())).toBe(false);
   expect(isArray(new Map())).toBe(false);
+  expect(isArray(new ArrayBuffer(1))).toBe(false);
 });

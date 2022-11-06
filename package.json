@@ -1,6 +1,6 @@
 {
   "name": "bittydash",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "description": "A small JavaScript utility library",
   "main": "dist/bittydash.cjs.js",
   "module": "dist/bittydash.esm.js",

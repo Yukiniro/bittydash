@@ -18,4 +18,5 @@ test("isFunction", () => {
   expect(isFunction(() => {})).toBe(true);
   expect(isFunction(new Set())).toBe(false);
   expect(isFunction(new Map())).toBe(false);
+  expect(isFunction(new ArrayBuffer(1))).toBe(false);
 });

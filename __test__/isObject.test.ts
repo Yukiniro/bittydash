@@ -18,4 +18,5 @@ test("isObject", () => {
   expect(isObject(() => {})).toBe(false);
   expect(isObject(new Set())).toBe(false);
   expect(isObject(new Map())).toBe(false);
+  expect(isObject(new ArrayBuffer(1))).toBe(false);
 });

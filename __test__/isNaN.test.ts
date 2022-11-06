@@ -18,4 +18,5 @@ test("isNaN", () => {
   expect(isNaN(() => {})).toBe(false);
   expect(isNaN(new Set())).toBe(false);
   expect(isNaN(new Map())).toBe(false);
+  expect(isNaN(new ArrayBuffer(1))).toBe(false);
 });
