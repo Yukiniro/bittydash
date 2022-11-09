@@ -3,8 +3,8 @@ import isString from "./isString";
 
 /**
  * @description Split elements in the array into groups the length of size.
- * @value The array or string to process.
- * @size The length of every chunk.
+ * @value - The array or string to process.
+ * @size - The length of every chunk.
  * @returns The array of chunks
  */
 function chunk(value: any[] | string, size = 1): any[] {

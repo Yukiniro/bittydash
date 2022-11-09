@@ -1,6 +1,7 @@
 /**
  * @description Check if value is classified as a set.
- * @param value The value to check.
+ * @category Type
+ * @param value - The value to check.
  * @returns Returns true if value is a set, else false.
  */
 function isSet(value: any): boolean {

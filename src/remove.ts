@@ -3,8 +3,9 @@ import isFunction from "./isFunction";
 
 /**
  * @description Removes a specified value or a matching value from an array.
- * @param array The array to modify.
- * @param checker The item or the function invoked per iteration.
+ * @category Function
+ * @param array - The array to modify.
+ * @param checker - The item or the function invoked per iteration.
  */
 function remove(array: any[], checker: any) {
   if (!isArray(array)) {

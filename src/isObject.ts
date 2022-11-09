@@ -1,6 +1,7 @@
 /**
  * @description Check if value is classified as an object.
- * @param value The value to check.
+ * @category Type
+ * @param value - The value to check.
  * @returns Returns true if value is an object, else false.
  */
 function isObject(value: any): boolean {

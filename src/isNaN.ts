@@ -1,6 +1,7 @@
 /**
  * @description Check if value is NaN.
- * @param value The value to check.
+ * @category Type
+ * @param value - The value to check.
  * @returns Returns true if value is NaN, else false.
  */
 function isNaN(value: any): boolean {

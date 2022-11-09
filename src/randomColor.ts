@@ -8,6 +8,12 @@ for (let i = 0; i < signs.length; i++) {
   codeList.push(signs[i]);
 }
 
+/**
+ * Get a random color.
+ * @param type - The type of color.
+ * @param opacity - The opacity of color.
+ * @returns  A random color for the specified type
+ */
 function randomColor(type = "hex", opacity?: number) {
   switch (type) {
     case "hex": {

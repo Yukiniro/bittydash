@@ -2,7 +2,8 @@ import isFunction from "./isFunction";
 
 /**
  * @description Cache the specified function, and return the result directly if the parameters are consistent.
- * @param handler The function to cache.
+ * @category Function
+ * @param handler - The function to cache.
  * @returns Return a function to transfer.
  */
 function memo(handler: (...args: any[]) => any) {

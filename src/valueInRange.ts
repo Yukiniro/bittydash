@@ -2,9 +2,9 @@ import isNumber from "./isNumber";
 
 /**
  * @description Return the value between min and max.
- * @param value The target value
- * @param min The min value
- * @param max The max value
+ * @param value - The target value
+ * @param min - The min value
+ * @param max - The max value
  * @returns The value in range
  */
 function valueInRange(value: number, min: number, max: number) {
