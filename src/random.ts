@@ -2,8 +2,8 @@ import isNumber from "./isNumber";
 
 /**
  * @description Returns a random value between min and max.
- * @param min The min value.
- * @param max The max value.
+ * @param min - The min value.
+ * @param max - The max value.
  * @returns The random value.
  */
 function random(min: number, max: number): number {

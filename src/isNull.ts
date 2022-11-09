@@ -1,6 +1,7 @@
 /**
  * @description Check if value is null.
- * @param value The value to check.
+ * @category Type
+ * @param value - The value to check.
  * @returns Returns true if value is null, else false.
  */
 function isNull(value: any): boolean {

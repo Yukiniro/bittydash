@@ -1,6 +1,7 @@
 /**
  * @description Check if value is classified as an array.
- * @param value The value to check
+ * @category Type
+ * @param value - The value to check
  * @returns Returns true if value is an array, else false.
  */
 function isArray(value: any): boolean {

@@ -5,8 +5,8 @@ import isSet from "./isSet";
 
 /**
  * @description Create a clone of value
- * @param value The value to clone.
- * @param deep Is recursively for the clone.
+ * @param value - The value to clone.
+ * @param deep - Is recursively for the clone.
  * @returns Return the cloned value.
  */
 function clone(value: any, deep = false): any {

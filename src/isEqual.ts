@@ -6,8 +6,8 @@ import isSet from "./isSet";
 
 /**
  * @description Determine if two values are equal by deep comparison.
- * @param value The value to compare.
- * @param other The other value to compare.
+ * @param value - The value to compare.
+ * @param other - The other value to compare.
  * @returns Return true if equal, else false.
  */
 function isEqual(value: any, other: any): boolean {
