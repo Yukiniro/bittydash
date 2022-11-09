@@ -10,20 +10,22 @@ The `bittydash` A small JavaScript utility library. And there is the [document w
 npm
 
 ```shell
-npm i bittydash
+npm i bittydash -S
 ```
 
 pnpm
 
 ```shell
-pnpm add bittydash
+pnpm add bittydash -S
 ```
 
 ## Example
 
 ```javascript
-import { isNaN } from 'bittydash'
+import { isNaN, uniq } from "bittydash";
 
 console.log(isNaN(1)); // false
 console.log(isNaN(NaN)); // true
+
+console.log(uniq([1, 1, 2, 3, 3])); // [1,2,3]
 ```
