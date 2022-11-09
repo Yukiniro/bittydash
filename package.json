@@ -1,6 +1,6 @@
 {
   "name": "bittydash",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A small JavaScript utility library",
   "main": "dist/bittydash.cjs.js",
   "module": "dist/bittydash.esm.js",
@@ -50,7 +50,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "tslib": "^2.3.1",
-    "typedoc": "^0.22.13",
+    "typedoc": "^0.23.20",
     "typescript": "^4.6.2",
     "vitest": "^0.19.1"
   }
