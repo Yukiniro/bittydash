@@ -1,6 +1,6 @@
 {
   "name": "bittydash",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A small JavaScript utility library",
   "main": "dist/bittydash.cjs.js",
   "module": "dist/bittydash.esm.js",
@@ -15,7 +15,7 @@
     "test": "npx vitest",
     "test:run": "npx vitest run",
     "test:coverrage": "npx vitest --coverage",
-    "publish": "pnpm run build && pnpm publish"
+    "publish": "pnpm run test:run && pnpm run build && pnpm publish"
   },
   "keywords": [
     "utility",
