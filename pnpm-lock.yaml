@@ -6,7 +6,7 @@ specifiers:
   '@babel/preset-env': ^7.16.11
   '@babel/preset-typescript': ^7.16.7
   '@rollup/plugin-babel': ^5.3.1
-  '@rollup/plugin-typescript': ^8.3.1
+  '@rollup/plugin-typescript': ^10.0.0
   '@yukiniro/eslint-config': ^0.0.6
   eslint: ^8.11.0
   prettier: ^2.6.0
@@ -27,7 +27,7 @@ devDependencies:
   '@babel/preset-env': 7.16.11_@babel+core@7.17.8
   '@babel/preset-typescript': 7.16.7_@babel+core@7.17.8
   '@rollup/plugin-babel': 5.3.1_b3dmjfji46fxi4pypym34a4m6q
-  '@rollup/plugin-typescript': 8.3.1_qwpalk3fl2r4saff6jvageoawu
+  '@rollup/plugin-typescript': 10.0.1_qwpalk3fl2r4saff6jvageoawu
   '@yukiniro/eslint-config': 0.0.6
   eslint: 8.11.0
   prettier: 2.6.0
@@ -1441,16 +1441,21 @@ packages:
       rollup: 2.70.1
     dev: true
 
-  /@rollup/plugin-typescript/8.3.1_qwpalk3fl2r4saff6jvageoawu:
-    resolution: {integrity: sha512-84rExe3ICUBXzqNX48WZV2Jp3OddjTMX97O2Py6D1KJaGSwWp0mDHXj+bCGNJqWHIEKDIT2U0sDjhP4czKi6cA==}
-    engines: {node: '>=8.0.0'}
+  /@rollup/plugin-typescript/10.0.1_qwpalk3fl2r4saff6jvageoawu:
+    resolution: {integrity: sha512-wBykxRLlX7EzL8BmUqMqk5zpx2onnmRMSw/l9M1sVfkJvdwfxogZQVNUM9gVMJbjRLDR5H6U0OMOrlDGmIV45A==}
+    engines: {node: '>=14.0.0'}
     peerDependencies:
-      rollup: ^2.14.0
+      rollup: ^2.14.0||^3.0.0
       tslib: '*'
       typescript: '>=3.7.0'
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+      tslib:
+        optional: true
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.70.1
-      resolve: 1.22.0
+      '@rollup/pluginutils': 5.0.2_rollup@2.70.1
+      resolve: 1.22.1
       rollup: 2.70.1
       tslib: 2.3.1
       typescript: 4.6.2
@@ -1476,6 +1481,21 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /@rollup/pluginutils/5.0.2_rollup@2.70.1:
+    resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@types/estree': 1.0.0
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
+      rollup: 2.70.1
+    dev: true
+
   /@tootallnate/once/1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
@@ -1497,6 +1517,10 @@ packages:
 
   /@types/estree/0.0.39:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
+    dev: true
+
+  /@types/estree/1.0.0:
+    resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
     dev: true
 
   /@types/json-schema/7.0.10:
@@ -2690,7 +2714,7 @@ packages:
     resolution: {integrity: sha512-0En0w03NRVMn9Uiyn8YRPDKvWjxCWkslUEhGNTdGx15RvPJYQ+lbOlqrlNI2vEAs4pDYK4f/HN2TbDmk5TP0iw==}
     dependencies:
       debug: 3.2.7
-      resolve: 1.22.0
+      resolve: 1.22.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2751,11 +2775,11 @@ packages:
       eslint-import-resolver-node: 0.3.6
       eslint-module-utils: 2.7.3_54d5qjwnmqnp5634aqlesxatge
       has: 1.0.3
-      is-core-module: 2.8.1
+      is-core-module: 2.11.0
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.values: 1.1.5
-      resolve: 1.22.0
+      resolve: 1.22.1
       tsconfig-paths: 3.14.0
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
@@ -2774,7 +2798,7 @@ packages:
       eslint-utils: 2.1.0
       ignore: 5.2.0
       minimatch: 3.1.2
-      resolve: 1.22.0
+      resolve: 1.22.1
       semver: 6.3.0
     dev: true
 
