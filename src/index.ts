@@ -27,6 +27,8 @@ import randomColor from "./randomColor";
 import isEven from "./isEven";
 import isOdd from "./isOdd";
 import uniq from "./uniq";
+import fitSize from "./fitSize";
+import fillSize from "./fillSize";
 
 export {
   isNumber,
@@ -58,4 +60,6 @@ export {
   isEven,
   isOdd,
   uniq,
+  fitSize,
+  fillSize,
 };
