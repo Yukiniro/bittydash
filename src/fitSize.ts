@@ -3,7 +3,7 @@ import { calcBoundSize } from "./util";
 
 /**
  * @description Calculate the maximum size baseSize fits into targetSize with constant scaling
- * @category size
+ * @category Size
  * @param {Size} baseSize
  * @param {Size} targetSize
  * @returns {Size}
