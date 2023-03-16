@@ -29,6 +29,9 @@ import isOdd from "./isOdd";
 import uniq from "./uniq";
 import fitSize from "./fitSize";
 import fillSize from "./fillSize";
+import uppercase from "./uppercase";
+import lowercase from "./lowercase";
+import capitalize from "./capitalize";
 
 export {
   isNumber,
@@ -62,4 +65,7 @@ export {
   uniq,
   fitSize,
   fillSize,
+  uppercase,
+  lowercase,
+  capitalize,
 };
