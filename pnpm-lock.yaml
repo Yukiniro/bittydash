@@ -18,7 +18,7 @@ specifiers:
   rollup-plugin-typescript2: ^0.31.2
   tslib: ^2.3.1
   typedoc: ^0.23.20
-  typescript: ^4.6.2
+  typescript: ^5.0.0
   vitest: ^0.29.0
 
 devDependencies:
@@ -27,19 +27,19 @@ devDependencies:
   '@babel/preset-env': 7.20.2_@babel+core@7.21.3
   '@babel/preset-typescript': 7.21.0_@babel+core@7.21.3
   '@rollup/plugin-babel': 5.3.1_hqhlikriuul7byjexqnpgcmenu
-  '@rollup/plugin-typescript': 10.0.1_bhcmvni67fkldpaxrtldxbogce
+  '@rollup/plugin-typescript': 10.0.1_gta7oowp4j2tir46rvp4skcu5a
   '@yukiniro/eslint-config': 0.0.6
   eslint: 8.36.0
   prettier: 2.8.4
   prettier-eslint: 13.0.0
   rollup: 2.79.1
-  rollup-plugin-dts: 4.2.3_zptcx3kz3uwp66hzhyyt545weq
+  rollup-plugin-dts: 4.2.3_g45eoamnsdoduaatvhvopjkfka
   rollup-plugin-filesize: 10.0.0
   rollup-plugin-terser: 7.0.2_rollup@2.79.1
-  rollup-plugin-typescript2: 0.31.2_zptcx3kz3uwp66hzhyyt545weq
+  rollup-plugin-typescript2: 0.31.2_g45eoamnsdoduaatvhvopjkfka
   tslib: 2.5.0
-  typedoc: 0.23.27_typescript@4.9.5
-  typescript: 4.9.5
+  typedoc: 0.23.27_typescript@5.0.2
+  typescript: 5.0.2
   vitest: 0.29.3
 
 packages:
@@ -1689,7 +1689,7 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /@rollup/plugin-typescript/10.0.1_bhcmvni67fkldpaxrtldxbogce:
+  /@rollup/plugin-typescript/10.0.1_gta7oowp4j2tir46rvp4skcu5a:
     resolution: {integrity: sha512-wBykxRLlX7EzL8BmUqMqk5zpx2onnmRMSw/l9M1sVfkJvdwfxogZQVNUM9gVMJbjRLDR5H6U0OMOrlDGmIV45A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -1706,7 +1706,7 @@ packages:
       resolve: 1.22.1
       rollup: 2.79.1
       tslib: 2.5.0
-      typescript: 4.9.5
+      typescript: 5.0.2
     dev: true
 
   /@rollup/pluginutils/3.1.0_rollup@2.79.1:
@@ -4727,7 +4727,7 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup-plugin-dts/4.2.3_zptcx3kz3uwp66hzhyyt545weq:
+  /rollup-plugin-dts/4.2.3_g45eoamnsdoduaatvhvopjkfka:
     resolution: {integrity: sha512-jlcpItqM2efqfIiKzDB/IKOS9E9fDvbkJSGw5GtK/PqPGS9eC3R3JKyw2VvpTktZA+TNgJRMu1NTv244aTUzzQ==}
     engines: {node: '>=v12.22.12'}
     peerDependencies:
@@ -4736,7 +4736,7 @@ packages:
     dependencies:
       magic-string: 0.26.7
       rollup: 2.79.1
-      typescript: 4.9.5
+      typescript: 5.0.2
     optionalDependencies:
       '@babel/code-frame': 7.18.6
     dev: true
@@ -4771,7 +4771,7 @@ packages:
       terser: 5.16.6
     dev: true
 
-  /rollup-plugin-typescript2/0.31.2_zptcx3kz3uwp66hzhyyt545weq:
+  /rollup-plugin-typescript2/0.31.2_g45eoamnsdoduaatvhvopjkfka:
     resolution: {integrity: sha512-hRwEYR1C8xDGVVMFJQdEVnNAeWRvpaY97g5mp3IeLnzhNXzSVq78Ye/BJ9PAaUfN4DXa/uDnqerifMOaMFY54Q==}
     peerDependencies:
       rollup: '>=1.26.3'
@@ -4784,7 +4784,7 @@ packages:
       resolve: 1.22.1
       rollup: 2.79.1
       tslib: 2.5.0
-      typescript: 4.9.5
+      typescript: 5.0.2
     dev: true
 
   /rollup/2.79.1:
@@ -5262,7 +5262,7 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
-  /typedoc/0.23.27_typescript@4.9.5:
+  /typedoc/0.23.27_typescript@5.0.2:
     resolution: {integrity: sha512-YKjlxX3LEhYbMCkemjlpNh1OKDiFa+ynqP0VRPsH28bEugrMTGI6l8DC6oX5kzFcUKKlYWKpZDSGWszuO/FR3g==}
     engines: {node: '>= 14.14'}
     hasBin: true
@@ -5273,7 +5273,7 @@ packages:
       marked: 4.2.12
       minimatch: 7.4.2
       shiki: 0.14.1
-      typescript: 4.9.5
+      typescript: 5.0.2
     dev: true
 
   /typescript/3.9.10:
@@ -5285,6 +5285,12 @@ packages:
   /typescript/4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
+  /typescript/5.0.2:
+    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
+    engines: {node: '>=12.20'}
     hasBin: true
     dev: true
 
