@@ -24,4 +24,5 @@ jobs:
         with:
           version: 7.x.x
           run_install: true
+      - run: pnpm i
       - run: pnpm test:run
