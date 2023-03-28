@@ -1,4 +1,4 @@
-name: Publish Package to npmjs
+name: Publish
 on:
   release:
     types: [published]
@@ -12,7 +12,10 @@ jobs:
         with:
           node-version: "16.x"
           registry-url: "https://registry.npmjs.org"
-      - run: pnpm i
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.x.x
+          run_install: true
       - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

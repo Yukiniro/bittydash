@@ -1,4 +1,4 @@
-name: Node.js CI
+name: CI
 
 on:
   push:
@@ -20,5 +20,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: pnpm i
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.x.x
+          run_install: true
       - run: pnpm test
