@@ -17,6 +17,6 @@ jobs:
           version: 7.x
           run_install: true
       - run: pnpm i
-      - run: pnpm run publish
+      - run: pnpm run publish:npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
