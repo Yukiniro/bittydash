@@ -1,10 +1,10 @@
 {
   "name": "bittydash",
-  "version": "0.5.15",
+  "version": "0.5.16",
   "description": "A small JavaScript utility library",
   "main": "dist/bittydash.cjs.js",
   "module": "dist/bittydash.esm.js",
-  "types": "types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "lint": "npx eslint src/**/*.ts --fix",
     "lint:test": "npx eslint __test__/**/*.ts --fix",
