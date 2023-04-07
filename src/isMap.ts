@@ -4,7 +4,7 @@
  * @param value - The value to check.
  * @returns Returns true if value is a map, else false.
  */
-function isMap(value: any): boolean {
+function isMap(value: unknown): boolean {
   return Object.prototype.toString.call(value) === "[object Map]";
 }
 

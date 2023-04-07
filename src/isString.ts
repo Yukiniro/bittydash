@@ -4,7 +4,7 @@
  * @param value - The value to check.
  * @returns Returns true if value is a string, else false.
  */
-function isString(value: any): boolean {
+function isString(value: unknown): boolean {
   return typeof value === "string";
 }
 

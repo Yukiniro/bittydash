@@ -9,7 +9,7 @@ import isSet from "./isSet";
  * @param deep - Is recursively for the clone.
  * @returns Return the cloned value.
  */
-function clone(value: any, deep = false): any {
+function clone<T>(value: T, deep = false): T {
   const cache = [];
   const baseClone = (value: any, deep = false) => {
     if (isArray(value)) {

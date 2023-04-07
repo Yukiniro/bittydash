@@ -2,7 +2,9 @@ import isString from "./isString";
 
 function uppercase(value: string): string {
   if (!isString(value)) {
-    throw new Error("The value must be string");
+    throw new Error(
+      `uppercase: parameter \`value\` expected to be a string, but got "${typeof value}"`
+    );
   }
   return value.toUpperCase();
 }

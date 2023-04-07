@@ -4,7 +4,7 @@
  * @param value - The value to check.
  * @returns Returns true if value is null, else false.
  */
-function isNull(value: any): boolean {
+function isNull(value: unknown): boolean {
   return !value && typeof value === "object";
 }
 

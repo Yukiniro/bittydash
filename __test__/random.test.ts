@@ -15,7 +15,7 @@ test("random", () => {
 
 test("random wrong", () => {
   expect(() => random(1, "2" as unknown as number)).toThrowError(
-    "Min or max must be number"
+    'random: parameter `min` and `max` expected to be a number, but got "number" "string"'
   );
   expect(() => random(2, 1)).toThrowError(
     "The min value must less than the max value"

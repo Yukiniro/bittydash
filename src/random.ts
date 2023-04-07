@@ -8,7 +8,9 @@ import isNumber from "./isNumber";
  */
 function random(min: number, max: number): number {
   if (!isNumber(min) || !isNumber(max)) {
-    throw new Error("Min or max must be number");
+    throw new Error(
+      `random: parameter \`min\` and \`max\` expected to be a number, but got "${typeof min}" "${typeof max}"`
+    );
   }
   if (min >= max) {
     throw new Error("The min value must less than the max value");

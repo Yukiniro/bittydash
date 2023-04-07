@@ -4,7 +4,7 @@
  * @param value - The value to check.
  * @returns Returns true if value is a set, else false.
  */
-function isSet(value: any): boolean {
+function isSet(value: unknown): boolean {
   return Object.prototype.toString.call(value) === "[object Set]";
 }
 

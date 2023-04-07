@@ -9,7 +9,7 @@ import isNumber from "./isNumber";
  */
 function valueInRange(value: number, min: number, max: number) {
   if (!isNumber(value) || !isNumber(min) || !isNumber(max)) {
-    throw new Error("All arguments must be number.");
+    throw new Error("valueInRange: All parameters must be a number.");
   }
   if (min > max) {
     throw new Error("The min value must less than the max value.");

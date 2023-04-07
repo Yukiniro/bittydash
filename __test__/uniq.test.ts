@@ -4,7 +4,9 @@ import { uniq } from "../src";
 test("uniq error", () => {
   expect(() => {
     uniq(111 as unknown as any[]);
-  }).toThrow("value must be array");
+  }).toThrow(
+    `uniq: parameter \`value\` expected to be a array, but got "number"`
+  );
 });
 
 test("remove", () => {

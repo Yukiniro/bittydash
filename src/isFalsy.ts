@@ -4,7 +4,7 @@
  * @param value - The value to check.
  * @returns Returns true if value is falsy, else false.
  */
-function isFalsy(value: any): boolean {
+function isFalsy(value: unknown): boolean {
   return !value;
 }
 
