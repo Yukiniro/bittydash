@@ -4,7 +4,7 @@
  * @param value - The value to check.
  * @returns Returns true if value is NaN, else false.
  */
-function isNaN(value: any): boolean {
+function isNaN(value: unknown): boolean {
   return typeof value === "number" && value !== value;
 }
 

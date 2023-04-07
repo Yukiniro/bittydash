@@ -4,7 +4,7 @@
  * @param value - The value to check.
  * @returns Returns true if value is a function, else false.
  */
-function isFunction(value: any): boolean {
+function isFunction(value: unknown): boolean {
   return Object.prototype.toString.call(value) === "[object Function]";
 }
 

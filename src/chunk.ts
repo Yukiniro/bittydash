@@ -1,4 +1,5 @@
 import isArray from "./isArray";
+import isNumber from "./isNumber";
 import isString from "./isString";
 
 /**
@@ -7,10 +8,18 @@ import isString from "./isString";
  * @size - The length of every chunk.
  * @returns The array of chunks
  */
-function chunk(value: any[] | string, size = 1): any[] {
+function chunk<T>(value: T[] | string, size = 1): T[][] {
   if (!isString(value) && !isArray(value)) {
-    throw new Error("The value must be string or array");
+    throw new Error(
+      `chunk: parameter \`value\` expected to be a string or array, but got "${typeof value}"`
+    );
   }
+  if (!isNumber(size)) {
+    throw new Error(
+      `chunk: parameter \`size\` expected to be a number, but got "${typeof value}"`
+    );
+  }
+
   const count = Math.ceil(value.length / size);
   const chunks = [];
   let index = 0;

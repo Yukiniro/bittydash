@@ -8,7 +8,14 @@ import isNumber from "./isNumber";
  */
 function fixed(value: number, digits = 0): number {
   if (!isNumber(value)) {
-    throw new Error("The value must be number");
+    throw new Error(
+      `fixed: parameter \`value\` expected to be a number, but got "${typeof value}"`
+    );
+  }
+  if (!isNumber(digits)) {
+    throw new Error(
+      `fixed: parameter \`digits\` expected to be a number, but got "${typeof digits}"`
+    );
   }
   return Number(value.toFixed(digits));
 }

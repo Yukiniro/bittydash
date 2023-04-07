@@ -4,7 +4,10 @@
  * @param wait - Time to delay
  * @returns
  */
-function debounce(func: (arg0: any) => any, wait = 0): (arg0: any) => any {
+function debounce(
+  func: (arg0: unknown) => unknown,
+  wait = 0
+): (arg0: unknown) => unknown {
   let timer = null;
   return (...args) => {
     if (timer) {

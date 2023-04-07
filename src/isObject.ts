@@ -4,7 +4,7 @@
  * @param value - The value to check.
  * @returns Returns true if value is an object, else false.
  */
-function isObject(value: any): boolean {
+function isObject(value: unknown): boolean {
   return Object.prototype.toString.call(value) === "[object Object]";
 }
 

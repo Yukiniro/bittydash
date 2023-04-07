@@ -6,14 +6,14 @@ import isFunction from "./isFunction";
  * @param handler - The function to cache.
  * @returns Return a function to transfer.
  */
-function memo(handler: (...args: any[]) => any) {
+function memo(handler: (...args: unknown[]) => unknown) {
   if (!isFunction(handler)) {
     throw new Error("Handler must be function");
   }
   const argsCache = [];
   const resultCache = [];
-  return (...args: any[]) => {
-    const cacheIndex = argsCache.findIndex((item: any[]) => {
+  return (...args: unknown[]) => {
+    const cacheIndex = argsCache.findIndex((item: unknown[]) => {
       let index = 0;
       while (index < args.length) {
         if (item[index] !== args[index]) {

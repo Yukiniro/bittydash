@@ -10,27 +10,29 @@ import isSet from "./isSet";
  * @param other - The other value to compare.
  * @returns Return true if equal, else false.
  */
-function isEqual(value: any, other: any): boolean {
+function isEqual(value: unknown, other: unknown): boolean {
   const cache = [];
-  const hasCache = (value: any, other: any) => {
+  const hasCache = (value: unknown, other: unknown) => {
     return !!cache.find((c) => c.value === value && c.other === other);
   };
-  const addCache = (value: any, other: any) => {
+  const addCache = (value: unknown, other: unknown) => {
     if (!hasCache(value, other)) {
       cache.push({ value, other });
     }
   };
-  const isBaseEqual = (value: any, other: any): boolean => {
+  const isBaseEqual = (value: unknown, other: unknown): boolean => {
     if (isNaN(value) && isNaN(other)) {
       return true;
     }
 
     if (isArray(value) && isArray(other)) {
-      if (value.length !== other.length) {
+      if (
+        (value as Array<unknown>).length !== (other as Array<unknown>).length
+      ) {
         return false;
       }
       let index = 0;
-      while (index < value.length) {
+      while (index < (value as Array<unknown>).length) {
         if (hasCache(value[index], other[index])) {
           index++;
         } else {
@@ -68,11 +70,18 @@ function isEqual(value: any, other: any): boolean {
     }
 
     if ((isMap(value) && isMap(other)) || (isSet(value) && isSet(other))) {
-      if (value.size !== other.size) {
+      if (
+        (value as Map<unknown, unknown> | Set<unknown>).size !==
+        (other as Map<unknown, unknown> | Set<unknown>).size
+      ) {
         return false;
       }
-      const iterator1 = value.entries();
-      const iterator2 = other.entries();
+      const iterator1 = (
+        value as Map<unknown, unknown> | Set<unknown>
+      ).entries();
+      const iterator2 = (
+        other as Map<unknown, unknown> | Set<unknown>
+      ).entries();
       while (true) {
         const { value: value1, done: done1 } = iterator1.next();
         const { value: value2, done: done2 } = iterator2.next();

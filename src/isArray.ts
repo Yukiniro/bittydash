@@ -4,7 +4,7 @@
  * @param value - The value to check
  * @returns Returns true if value is an array, else false.
  */
-function isArray(value: any): boolean {
+function isArray(value: unknown): boolean {
   return Array.isArray(value);
 }
 
