@@ -9,7 +9,7 @@ describe("Arguments error", () => {
         "1" as unknown as number,
         "1" as unknown as number
       )
-    ).toThrowError("All arguments must be number.");
+    ).toThrowError("valueInRange: All parameters must be a number.");
   });
 
   test("Arguments error", () => {

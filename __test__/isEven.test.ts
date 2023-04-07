@@ -3,7 +3,7 @@ import { isEven } from "../src";
 
 test("Wrong arguments", () => {
   expect(() => isEven(null as unknown as number)).toThrowError(
-    "The value must be number"
+    `isEven: parameter \`value\` expected to be a number, but got "object"`
   );
 });
 
