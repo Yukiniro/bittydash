@@ -1,22 +1,12 @@
 import { test, expect } from "vitest";
 import { isNumber } from "../src";
+import { getTestValues } from "./util";
 
-test("isNumber", () => {
-  expect(isNumber(0)).toBe(true);
-  expect(isNumber(1)).toBe(true);
-  expect(isNumber(-1)).toBe(true);
-  expect(isNumber(Infinity)).toBe(true);
-  expect(isNumber(-Infinity)).toBe(true);
-  expect(isNumber(NaN)).toBe(false);
-  expect(isNumber("1")).toBe(false);
-  expect(isNumber(undefined)).toBe(false);
-  expect(isNumber(null)).toBe(false);
-  expect(isNumber([])).toBe(false);
-  expect(isNumber({})).toBe(false);
-  expect(isNumber(true)).toBe(false);
-  expect(isNumber(false)).toBe(false);
-  expect(isNumber(() => {})).toBe(false);
-  expect(isNumber(new Set())).toBe(false);
-  expect(isNumber(new Map())).toBe(false);
-  expect(isNumber(new ArrayBuffer(1))).toBe(false);
+const values = getTestValues().map((value, index) => ({
+  index,
+  expected: isNumber(value),
+}));
+
+test.each(values)("isNumber($index) -> $expected", ({ index, expected }) => {
+  expect([0, 1, 2, 3, 4].includes(index)).toBe(expected);
 });

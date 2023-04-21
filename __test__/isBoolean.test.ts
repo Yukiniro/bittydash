@@ -1,22 +1,12 @@
 import { test, expect } from "vitest";
 import { isBoolean } from "../src";
+import { getTestValues } from "./util";
 
-test("isBoolean", () => {
-  expect(isBoolean(0)).toBe(false);
-  expect(isBoolean(1)).toBe(false);
-  expect(isBoolean(-1)).toBe(false);
-  expect(isBoolean(Infinity)).toBe(false);
-  expect(isBoolean(-Infinity)).toBe(false);
-  expect(isBoolean(NaN)).toBe(false);
-  expect(isBoolean("1")).toBe(false);
-  expect(isBoolean(undefined)).toBe(false);
-  expect(isBoolean(null)).toBe(false);
-  expect(isBoolean([])).toBe(false);
-  expect(isBoolean({})).toBe(false);
-  expect(isBoolean(true)).toBe(true);
-  expect(isBoolean(false)).toBe(true);
-  expect(isBoolean(() => {})).toBe(false);
-  expect(isBoolean(new Set())).toBe(false);
-  expect(isBoolean(new Map())).toBe(false);
-  expect(isBoolean(new ArrayBuffer(1))).toBe(false);
+const values = getTestValues().map((value, index) => ({
+  index,
+  expected: isBoolean(value),
+}));
+
+test.each(values)("isBoolean($index) -> $expected", ({ index, expected }) => {
+  expect(index === 11 || index === 12).toBe(expected);
 });

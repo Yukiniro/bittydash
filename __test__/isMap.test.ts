@@ -1,22 +1,12 @@
 import { test, expect } from "vitest";
 import { isMap } from "../src";
+import { getTestValues } from "./util";
 
-test("isMap", () => {
-  expect(isMap(0)).toBe(false);
-  expect(isMap(1)).toBe(false);
-  expect(isMap(-1)).toBe(false);
-  expect(isMap(Infinity)).toBe(false);
-  expect(isMap(-Infinity)).toBe(false);
-  expect(isMap(NaN)).toBe(false);
-  expect(isMap("1")).toBe(false);
-  expect(isMap(undefined)).toBe(false);
-  expect(isMap(null)).toBe(false);
-  expect(isMap([])).toBe(false);
-  expect(isMap({})).toBe(false);
-  expect(isMap(true)).toBe(false);
-  expect(isMap(false)).toBe(false);
-  expect(isMap(() => {})).toBe(false);
-  expect(isMap(new Set())).toBe(false);
-  expect(isMap(new Map())).toBe(true);
-  expect(isMap(new ArrayBuffer(1))).toBe(false);
+const values = getTestValues().map((value, index) => ({
+  index,
+  expected: isMap(value),
+}));
+
+test.each(values)("isMap($index) -> $expected", ({ index, expected }) => {
+  expect([15].includes(index)).toBe(expected);
 });

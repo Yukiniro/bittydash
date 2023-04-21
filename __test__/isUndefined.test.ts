@@ -1,22 +1,12 @@
 import { test, expect } from "vitest";
 import { isUndefined } from "../src";
+import { getTestValues } from "./util";
 
-test("isUndefined", () => {
-  expect(isUndefined(0)).toBe(false);
-  expect(isUndefined(1)).toBe(false);
-  expect(isUndefined(-1)).toBe(false);
-  expect(isUndefined(Infinity)).toBe(false);
-  expect(isUndefined(-Infinity)).toBe(false);
-  expect(isUndefined(NaN)).toBe(false);
-  expect(isUndefined("1")).toBe(false);
-  expect(isUndefined(undefined)).toBe(true);
-  expect(isUndefined(null)).toBe(false);
-  expect(isUndefined([])).toBe(false);
-  expect(isUndefined({})).toBe(false);
-  expect(isUndefined(true)).toBe(false);
-  expect(isUndefined(false)).toBe(false);
-  expect(isUndefined(() => {})).toBe(false);
-  expect(isUndefined(new Set())).toBe(false);
-  expect(isUndefined(new Map())).toBe(false);
-  expect(isUndefined(new ArrayBuffer(1))).toBe(false);
+const values = getTestValues().map((value, index) => ({
+  index,
+  expected: isUndefined(value),
+}));
+
+test.each(values)("isFalsy($index) -> $expected", ({ index, expected }) => {
+  expect([7].includes(index)).toBe(expected);
 });
