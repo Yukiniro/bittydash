@@ -32,6 +32,7 @@ import fillSize from "./fillSize";
 import uppercase from "./uppercase";
 import lowercase from "./lowercase";
 import capitalize from "./capitalize";
+import isBlob from "./isBlob";
 
 export {
   isNumber,
@@ -47,6 +48,7 @@ export {
   isMap,
   isFalsy,
   isTruthy,
+  isBlob,
   sleep,
   polling,
   chunk,
