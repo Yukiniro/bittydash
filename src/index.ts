@@ -33,6 +33,7 @@ import uppercase from "./uppercase";
 import lowercase from "./lowercase";
 import capitalize from "./capitalize";
 import isBlob from "./isBlob";
+import isFile from "./isFile";
 
 export {
   isNumber,
@@ -49,6 +50,7 @@ export {
   isFalsy,
   isTruthy,
   isBlob,
+  isFile,
   sleep,
   polling,
   chunk,
