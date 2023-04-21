@@ -1,22 +1,12 @@
 import { test, expect } from "vitest";
 import { isFunction } from "../src";
+import { getTestValues } from "./util";
 
-test("isFunction", () => {
-  expect(isFunction(0)).toBe(false);
-  expect(isFunction(1)).toBe(false);
-  expect(isFunction(-1)).toBe(false);
-  expect(isFunction(Infinity)).toBe(false);
-  expect(isFunction(-Infinity)).toBe(false);
-  expect(isFunction(NaN)).toBe(false);
-  expect(isFunction("1")).toBe(false);
-  expect(isFunction(undefined)).toBe(false);
-  expect(isFunction(null)).toBe(false);
-  expect(isFunction([])).toBe(false);
-  expect(isFunction({})).toBe(false);
-  expect(isFunction(true)).toBe(false);
-  expect(isFunction(false)).toBe(false);
-  expect(isFunction(() => {})).toBe(true);
-  expect(isFunction(new Set())).toBe(false);
-  expect(isFunction(new Map())).toBe(false);
-  expect(isFunction(new ArrayBuffer(1))).toBe(false);
+const values = getTestValues().map((value, index) => ({
+  index,
+  expected: isFunction(value),
+}));
+
+test.each(values)("isFunction($index) -> $expected", ({ index, expected }) => {
+  expect([13].includes(index)).toBe(expected);
 });
