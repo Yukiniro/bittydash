@@ -1,4 +1,4 @@
-export function getComposeValue() {
+function getComposeValue() {
   const set1 = new Set();
   set1.add(1);
   set1.add([1, 2]);
@@ -11,3 +11,27 @@ export function getComposeValue() {
   worker.person = person;
   return [0, 1, person, worker, set1, map1];
 }
+
+function getTestValues() {
+  return [
+    0,
+    1,
+    -1,
+    Infinity,
+    -Infinity,
+    NaN,
+    "1",
+    undefined,
+    null,
+    [],
+    {},
+    true,
+    false,
+    () => {},
+    new Set(),
+    new Map(),
+    new ArrayBuffer(1),
+  ];
+}
+
+export { getComposeValue, getTestValues };
