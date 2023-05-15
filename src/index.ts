@@ -35,6 +35,8 @@ import capitalize from "./capitalize";
 import isBlob from "./isBlob";
 import isFile from "./isFile";
 import isImageBitmap from "./isImageBitmap";
+import isCanvas from "./isCanvas";
+import isOffscreenCanvas from "./isOffscreenCanvas";
 
 export {
   isNumber,
@@ -74,4 +76,6 @@ export {
   lowercase,
   capitalize,
   isImageBitmap,
+  isCanvas,
+  isOffscreenCanvas,
 };
