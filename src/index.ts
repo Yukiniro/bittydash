@@ -36,6 +36,7 @@ import isBlob from "./isBlob";
 import isFile from "./isFile";
 import isImageBitmap from "./isImageBitmap";
 import isCanvas from "./isCanvas";
+import isOffscreenCanvas from "./isOffscreenCanvas";
 
 export {
   isNumber,
@@ -76,4 +77,5 @@ export {
   capitalize,
   isImageBitmap,
   isCanvas,
+  isOffscreenCanvas,
 };
