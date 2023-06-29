@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -48,8 +48,8 @@ devDependencies:
     specifier: ^10.0.0
     version: 10.0.0
   rollup-plugin-typescript2:
-    specifier: ^0.31.2
-    version: 0.31.2(rollup@3.20.2)(typescript@5.0.2)
+    specifier: ^0.35.0
+    version: 0.35.0(rollup@3.20.2)(typescript@5.0.2)
   tslib:
     specifier: ^2.3.1
     version: 2.5.0
@@ -2115,14 +2115,6 @@ packages:
       concordance: 5.0.4
       loupe: 2.3.6
       pretty-format: 27.5.1
-    dev: true
-
-  /@yarn-tool/resolve-package@1.0.47:
-    resolution: {integrity: sha512-Zaw58gQxjQceJqhqybJi1oUDaORT8i2GTgwICPs8v/X/Pkx35FXQba69ldHVg5pQZ6YLKpROXgyHvBaCJOFXiA==}
-    dependencies:
-      pkg-dir: 5.0.0
-      tslib: 2.5.0
-      upath2: 3.1.19
     dev: true
 
   /@yukiniro/eslint-config@0.0.7(eslint-plugin-n@15.7.0):
@@ -4753,12 +4745,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /path-is-network-drive@1.0.20:
-    resolution: {integrity: sha512-p5wCWlRB4+ggzxWshqHH9aF3kAuVu295NaENXmVhThbZPJQBeJdxZTP6CIoUR+kWHDUW56S9YcaO1gXnc/BOxw==}
-    dependencies:
-      tslib: 2.5.0
-    dev: true
-
   /path-key@3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
     engines: {node: '>=8'}
@@ -4766,12 +4752,6 @@ packages:
 
   /path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
-    dev: true
-
-  /path-strip-sep@1.0.17:
-    resolution: {integrity: sha512-+2zIC2fNgdilgV7pTrktY6oOxxZUo9x5zJYfTzxsGze5kSGDDwhA5/0WlBn+sUyv/WuuyYn3OfM+Ue5nhdQUgA==}
-    dependencies:
-      tslib: 2.5.0
     dev: true
 
   /path-type@4.0.0:
@@ -4801,13 +4781,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
-    dev: true
-
-  /pkg-dir@5.0.0:
-    resolution: {integrity: sha512-NPE8TDbzl/3YQYY7CSS228s3g2ollTFnc+Qi3tqmqJp9Vg2ovUpixcJEo2HJScN2Ez+kEaal6y70c0ehqJBJeA==}
-    engines: {node: '>=10'}
-    dependencies:
-      find-up: 5.0.0
     dev: true
 
   /pkg-types@1.0.2:
@@ -5091,18 +5064,17 @@ packages:
       - supports-color
     dev: true
 
-  /rollup-plugin-typescript2@0.31.2(rollup@3.20.2)(typescript@5.0.2):
-    resolution: {integrity: sha512-hRwEYR1C8xDGVVMFJQdEVnNAeWRvpaY97g5mp3IeLnzhNXzSVq78Ye/BJ9PAaUfN4DXa/uDnqerifMOaMFY54Q==}
+  /rollup-plugin-typescript2@0.35.0(rollup@3.20.2)(typescript@5.0.2):
+    resolution: {integrity: sha512-szcIO9hPUx3PhQl91u4pfNAH2EKbtrXaES+m163xQVE5O1CC0ea6YZV/5woiDDW3CR9jF2CszPrKN+AFiND0bg==}
     peerDependencies:
       rollup: '>=1.26.3'
       typescript: '>=2.4.0'
     dependencies:
       '@rollup/pluginutils': 4.2.1
-      '@yarn-tool/resolve-package': 1.0.47
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
-      resolve: 1.22.1
       rollup: 3.20.2
+      semver: 7.3.8
       tslib: 2.5.0
       typescript: 5.0.2
     dev: true
@@ -5694,15 +5666,6 @@ packages:
   /universalify@2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
-    dev: true
-
-  /upath2@3.1.19:
-    resolution: {integrity: sha512-d23dQLi8nDWSRTIQwXtaYqMrHuca0As53fNiTLLFDmsGBbepsZepISaB2H1x45bDFN/n3Qw9bydvyZEacTrEWQ==}
-    dependencies:
-      '@types/node': 18.15.3
-      path-is-network-drive: 1.0.20
-      path-strip-sep: 1.0.17
-      tslib: 2.5.0
     dev: true
 
   /update-browserslist-db@1.0.10(browserslist@4.21.5):
