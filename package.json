@@ -40,7 +40,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-typescript": "^10.0.0",
-    "@yukiniro/eslint-config": "^0.0.7",
+    "@yukiniro/eslint-config": "^0.0.8",
     "eslint": "^8.11.0",
     "jsdom": "^22.0.0",
     "prettier": "^3.0.0",
